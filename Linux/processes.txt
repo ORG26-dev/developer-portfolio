@@ -1,0 +1,20 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  24228 15424 ?        Ss   04:51   0:00 /sbin/init
+root           2  0.0  0.0   3820  2524 hvc0     Sl+  04:51   0:00 /init
+root           3  0.0  0.0   3680  2220 hvc0     S+   04:51   0:00 init-watcher
+root           8  0.0  0.0   3820  2296 hvc0     Sl+  04:51   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          45  0.0  0.1  50692 19992 ?        S<s  04:51   0:00 /usr/lib/systemd/systemd-journald
+systemd+      80  0.0  0.1  22448 14488 ?        Ss   04:51   0:00 /usr/lib/systemd/systemd-resolved
+root          86  0.0  0.1  35224 12316 ?        Ss   04:51   0:00 /usr/lib/systemd/systemd-udevd
+root         107  0.0  0.0   2888  2012 ?        Ss   04:51   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         108  0.0  0.0   4472  3112 ?        Ss   04:51   0:00 /usr/sbin/cron -f -P
+message+     109  0.0  0.0   8808  5408 ?        Ss   04:51   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         145  0.0  0.2  44112 29880 ?        Ss   04:51   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         162  0.0  0.0  18460  9592 ?        Ss   04:51   0:00 /usr/lib/systemd/systemd-logind
+syslog       187  0.0  0.0 220552  5956 ?        Ssl  04:51   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         207  0.0  0.0   5492  2772 tty1     Ss+  04:51   0:00 /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+_chrony      222  0.0  0.0  20424  7924 ?        S    04:51   0:00 /usr/sbin/chronyd -n -F 1 -x
+root         224  0.0  0.2 123480 32620 ?        Ssl  04:51   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+_chrony      245  0.0  0.0  12096  2460 ?        S    04:51   0:00 /usr/sbin/chronyd -n -F 1 -x
+root         324  0.0  0.0   8644  5476 ?        Ss   04:51   0:00 login -- rushant
+rushant      366  0.0  0.1  22380 13736 ?        Ss   04:51   0:00 /usr/lib/systemd/systemd --user
